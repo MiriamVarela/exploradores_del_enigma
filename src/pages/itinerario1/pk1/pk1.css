@@ -1,0 +1,17 @@
+.pk1{
+    margin-top: 40px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+     margin-left: 20px;
+}
+
+.buttons {
+    position: fixed;
+    bottom: 80px;
+    left: 40px;
+    right: 40px;
+    width: calc(100% - 80px);;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}

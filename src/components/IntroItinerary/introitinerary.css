@@ -1,0 +1,83 @@
+.itineraryblock{
+    background-color: #B1749F;
+    border-radius: 16px;  
+    
+}
+
+.div-con-elementos {
+    margin-bottom: 10px; /* Esto reduce el espacio en la parte inferior del div */
+}
+  
+h1, p.introsubtitle {
+    margin: 0; /* Esto elimina los márgenes predeterminados del h1 y del p */
+}
+
+
+.itinerarytittle{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.exploradorintro{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    padding: 30px;
+}     
+
+
+h1{
+    color: #EEDCDC;
+    font-family: Rancho;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.introsubtitle{
+    color: #EEDCDC;
+    font-family: Rancho;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.listintroblock{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.listintroblock ul {
+    margin-top: 40px;
+  }
+
+.listintroblock li {
+    margin-bottom: 20px;
+  }
+
+
+@media (min-width: 1024px) {
+    .imgplace {
+        max-width: 661px; 
+        max-height: 356px;
+        margin: 40px;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: #EEDCDC;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}

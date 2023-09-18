@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Rancho-Regular';
+    src: url('../../assets/fonts/Rancho-Regular.ttf');
+  }
+
+.imgsite{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+  
+h2{
+    color: #D78871;
+    font-family: 'Rancho-Regular';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.site{
+    color: #3E2332;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.exploradorstory{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}

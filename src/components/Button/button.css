@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Rancho-Regular';
+  src: url('../../assets/fonts/Rancho-Regular.ttf');
+}
+
+.button{
+    text-align: center;
+    display: inline-block;
+    background-color: #D78871;
+    color: #EEDCDC;
+    font-family: 'Rancho-Regular';
+    font-size: 24px;
+    padding: 6.5px 11px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  .button:hover {
+    background-color: #772106;
+  }
