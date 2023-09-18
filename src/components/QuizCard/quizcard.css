@@ -19,7 +19,12 @@
     align-items: center;
     gap: 20px;
     padding-bottom: 20px;
+    min-height: 100px; 
+    /*overflow: hidden;
+    overflow-wrap: break-word;
+    white-space: normal;*/
 }
+
 
 .quiz{
     color: #3E2332;
@@ -28,7 +33,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 100%;    
+    width: 100%;
+    
+     overflow: hidden; 
+    overflow-wrap: break-word; 
+    white-space: normal;    
 }
 
 .exploradorquiz{
@@ -47,4 +56,15 @@
     font-weight: 700;
     line-height: normal;
     margin-right: 10px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .quizcardiv{
+        height: 60vh;
+        width: 84%;
+    }
+    
+    .imgquiz{
+        flex-direction: column;
+    }
 }
