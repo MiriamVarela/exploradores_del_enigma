@@ -6,7 +6,7 @@
             "option2": "17",
             "option3": "19"
         },
-        "correct_answer": 17,
+        "correct_answer": "17",
         "question": "¿Cuál es el número de toboganes?",
         "itinerary": "Valencia"
     },
@@ -17,7 +17,7 @@
             "option2": "4",
             "option3": "5"
         },
-        "correct_answer": 3,
+        "correct_answer": "3",
         "question": "¿Cuál es el número de golas?",
         "itinerary": "Valencia"
     },
@@ -50,7 +50,7 @@
             "option2": "Santa Clara",
             "option3": "Un gato"
         },
-        "correct_answer": "Gato",
+        "correct_answer": "Un gato",
         "question": "Escoge la figura:",
         "itinerary": "Valencia"
     }
