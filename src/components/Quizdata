@@ -1,0 +1,18 @@
+import { data } from '../../src/data/questions.json';
+
+function QuizData() {
+  
+  const getQuestionById = (id) => {
+    return data.find(item => item.id === id);
+  };
+
+  
+
+  return {
+    data,
+    getQuestionById,
+    
+  };
+}
+
+export default QuizData;
