@@ -1,7 +1,7 @@
 import './introitinerary.css'
 import PropTypes from 'prop-types';
 import Explorador from '../../assets/images/Explorer1_quiz.png';
-import Valencia from '../../assets/images/Valencia.jpeg';
+import Valencia from '../../assets/images/valencia.jpeg';
 
 function introitinerary({ sitetittle, sitesbtittle, locationtext, currencytext, languagetext, dailycoststext,foodertext }){
     return(

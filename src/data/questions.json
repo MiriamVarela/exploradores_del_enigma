@@ -53,6 +53,17 @@
         "correct_answer": "Un gato",
         "question": "Escoge la figura:",
         "itinerary": "Valencia"
+    },
+    {
+        "id": 6,
+        "options": {
+            "option1": "Asturias",
+            "option2": "A Coruña",
+            "option3": "Lugo"
+        },
+        "correct_answer": "Lugo",
+        "question": "¿Cuál es esta provincia",
+        "itinerary": "Valencia"
     }
 ]
 
