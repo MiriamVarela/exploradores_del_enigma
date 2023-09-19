@@ -10,6 +10,7 @@ function QuizCard({ questionId, quiztext }) {
   
   const [isCorrect, setIsCorrect] = useState(null);
   const [selectedOption, setSelectedOption] = useState('');
+  const [correctAnswersCount, setCorrectAnswersCount] = useState(0);
 
   if (!question) {
     return <div>No hay pregunta disponible para este ID</div>;
@@ -25,7 +26,11 @@ function QuizCard({ questionId, quiztext }) {
     const selectedValue = e.target.value;
     setSelectedOption(selectedValue);
     setIsCorrect(selectedValue === questionsData[questionId - 1].correct_answer);
-  }
+  
+    if (selectedValue === questionsData[questionId - 1].correct_answer) {
+        setCorrectAnswersCount(prevCount => prevCount + 1);
+    }
+}
 
   return (
     <div className="quizcardiv">
@@ -36,8 +41,8 @@ function QuizCard({ questionId, quiztext }) {
 
       <div>
         <label className="label">{question.question}</label>
-        <select value={selectedOption} onChange={handleOptionSelect}>
-        <option value="">Select an option</option>
+        <select className="dropdown" value={selectedOption} onChange={handleOptionSelect}>
+        <option value="">Escoge una opción</option>
           {Object.values(options).map((option, index) => (
             <option key={index} value={option}>
               {option}
@@ -47,6 +52,10 @@ function QuizCard({ questionId, quiztext }) {
       </div>
       {isCorrect === true && <p>¡Respuesta correcta!</p>}
       {isCorrect === false && <p>Respuesta incorrecta. Inténtalo de nuevo.</p>}
+      <p>Respuestas correctas acumuladas: {correctAnswersCount}</p>
+      {correctAnswersCount >= 2 && <p>¡Ya eres un explorador novato!</p>}
+      {correctAnswersCount >= 4 && <p>¡Ya eres un explorador medio!</p>}
+      {correctAnswersCount >= 6 && <p>¡Ya eres un explorador experto!</p>}
     </div>
   );
 }

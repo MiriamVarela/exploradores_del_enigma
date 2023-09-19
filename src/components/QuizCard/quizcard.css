@@ -58,6 +58,20 @@
     margin-right: 10px; 
 }
 
+.dropdown{
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #3E2332;
+    border-radius: 4px;
+     background-color: #fff;
+    color: #D78871;
+    cursor: pointer;
+}
+
+.dropdown option:hover {
+    background-color: #D78871; 
+}
+
 @media only screen and (max-width: 768px) {
     .quizcardiv{
         height: 60vh;
