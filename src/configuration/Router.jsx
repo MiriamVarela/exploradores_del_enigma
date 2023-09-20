@@ -6,6 +6,7 @@ import Pk4 from '../../src/pages/itinerario1/pk4/Pk4';
 import Pk5 from '../../src/pages/itinerario1/pk5/Pk5';
 import Pk6 from '../../src/pages/itinerario1/pk6/Pk6';
 import Intro from "../pages/itinerario1/intro/Intro";
+import FinalPage from "../pages/itinerario1/Finalpage/Finalpage";
 
 const RouterItem = () => {
     return (
@@ -18,6 +19,7 @@ const RouterItem = () => {
                 <Route path="/itinerary1pk4" element={<Pk4/>}></Route>
                 <Route path="/itinerary1pk5" element={<Pk5/>}></Route>
                 <Route path="/itinerary1pk6" element={<Pk6/>}></Route>
+                <Route path="/itinerary1final" element={<FinalPage/>}></Route>
             </Routes>
         </BrowserRouter>
     )

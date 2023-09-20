@@ -12,7 +12,7 @@ function Pk6(){
             <QuizCard quiztext='Entre otras especies que puedes encontrar en el Jardín se encuentra una zarza sin espinas. De esta zarza, cuenta la leyenda que San Benito se lanzó sobre las espinas de la planta. Todas las espinas quedaron clavadas en el cuerpo del santo mientras las zarzas quedaron sin ellas. Esta zarza ha sido transplantada desde una provincia del norte de España.' questionId={6}/>
             <div className='buttons'>
                 <Button onClick={() => navigate('/itinerary1pk5')} text='Atrás'/>
-                <Button text="Siguiente"/>
+                <Button onClick={() => navigate('/itinerary1final')} text="Siguiente"/>
             </div>
         </div>
     );
