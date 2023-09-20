@@ -1,17 +1,17 @@
 
-//import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import FinalPage from '../../../components/FinalPage/FinalPage';
 
-function FinalPage() {
-  {/*const location = useLocation();
-const { respuestasCorrectas } = location.state;*/}
+function Finalpage() {
+    const [totalScore] = useState(0);
+  
 
   return (
-    <div className="final-page">
-      <h1>¡Felicidades, explorador!</h1>
-      {/*<p>Tu puntuación final es: {respuestasCorrectas} puntos</p>*/}
-      <p>¡Eres un auténtico experto!</p>
-    </div>
+    <>
+        <FinalPage totalScore={totalScore}/>
+    </>
+    
   );
 }
 
-export default FinalPage;
+export default Finalpage;

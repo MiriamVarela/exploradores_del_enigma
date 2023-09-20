@@ -1,0 +1,46 @@
+.finalpage {
+    background-color: #B1749F;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    color: #EEDCDC;
+    font-family: Lato, sans-serif;
+}
+  
+.finalpage h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.finalpage p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.finalpage .score {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+  
+  
+  
+@media (max-width: 768px) {
+    .finalpage {
+      padding: 10px;
+    }
+  
+    .finalpage h1 {
+      font-size: 36px;
+    }
+  
+    .finalpage p {
+      font-size: 20px;
+    }
+  
+    .finalpage .score {
+      font-size: 30px;
+    }
+  
+    
+}

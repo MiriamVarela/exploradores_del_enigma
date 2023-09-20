@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import questionsData from '../../data/questions.json'; 
 
 
-function QuizCard({ questionId, quiztext }) {
+function QuizCard({ questionId, quiztext, setTotalScore }) {
   const question = questionsData[questionId - 1]; 
   
   const [isCorrect, setIsCorrect] = useState(null);
@@ -29,6 +29,7 @@ function QuizCard({ questionId, quiztext }) {
   
     if (selectedValue === questionsData[questionId - 1].correct_answer) {
         setCorrectAnswersCount(prevCount => prevCount + 1);
+        setTotalScore(prevScore => prevScore + 1);
     }
 }
 
@@ -65,7 +66,8 @@ function QuizCard({ questionId, quiztext }) {
 QuizCard.propTypes = {
     quiztext: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
-    questionId: PropTypes.number.isRequired
+    questionId: PropTypes.number.isRequired,
+    setTotalScore: PropTypes.func.isRequired
     
   }
 
