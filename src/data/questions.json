@@ -1,69 +1,75 @@
-[
-    {
-        "id": 1,
-        "options": {
-            "option1": "15",
-            "option2": "17",
-            "option3": "19"
+{
+    "totalQuestions":6,
+    "questions":[
+        {
+            "id": 1,
+            "options": {
+                "option1": "15",
+                "option2": "17",
+                "option3": "19"
+            },
+            "correct_answer": "17",
+            "question": "¿Cuál es el número de toboganes?",
+            "itinerary": "Valencia"
         },
-        "correct_answer": "17",
-        "question": "¿Cuál es el número de toboganes?",
-        "itinerary": "Valencia"
-    },
-    {
-        "id": 2,
-        "options": {
-            "option1": "3",
-            "option2": "4",
-            "option3": "5"
+        {
+            "id": 2,
+            "options": {
+                "option1": "3",
+                "option2": "4",
+                "option3": "5"
+            },
+            "correct_answer": "3",
+            "question": "¿Cuál es el número de golas?",
+            "itinerary": "Valencia"
         },
-        "correct_answer": "3",
-        "question": "¿Cuál es el número de golas?",
-        "itinerary": "Valencia"
-    },
-    {
-        "id": 3,
-        "options": {
-            "option1": "4",
-            "option2": "6",
-            "option3": "8"
+        {
+            "id": 3,
+            "options": {
+                "option1": "4",
+                "option2": "6",
+                "option3": "8"
+            },
+            "correct_answer": "6",
+            "question": "Cuenta las letras que componen la palabra",
+            "itinerary": "Valencia"
         },
-        "correct_answer": "6",
-        "question": "Cuenta las letras que componen la palabra",
-        "itinerary": "Valencia"
-    },
-    {
-        "id": 4,
-        "options": {
-            "option1": "1902",
-            "option2": "1904",
-            "option3": "1929"
+        {
+            "id": 4,
+            "options": {
+                "option1": "1902",
+                "option2": "1904",
+                "option3": "1929"
+            },
+            "correct_answer": "1902",
+            "question": "¿En qué año se publicó?",
+            "itinerary": "Valencia"
         },
-        "correct_answer": "1902",
-        "question": "¿En qué año se publicó?",
-        "itinerary": "Valencia"
-    },
-    {
-        "id": 5,
-        "options": {
-            "option1": "Un ángel",
-            "option2": "Santa Clara",
-            "option3": "Un gato"
+        {
+            "id": 5,
+            "options": {
+                "option1": "Un ángel",
+                "option2": "Santa Clara",
+                "option3": "Un gato"
+            },
+            "correct_answer": "Un gato",
+            "question": "Escoge la figura:",
+            "itinerary": "Valencia"
         },
-        "correct_answer": "Un gato",
-        "question": "Escoge la figura:",
-        "itinerary": "Valencia"
-    },
-    {
-        "id": 6,
-        "options": {
-            "option1": "Asturias",
-            "option2": "A Coruña",
-            "option3": "Lugo"
-        },
-        "correct_answer": "Lugo",
-        "question": "¿Cuál es esta provincia",
-        "itinerary": "Valencia"
-    }
-]
+        {
+            "id": 6,
+            "options": {
+                "option1": "Asturias",
+                "option2": "A Coruña",
+                "option3": "Lugo"
+            },
+            "correct_answer": "Lugo",
+            "question": "¿Cuál es esta provincia",
+            "itinerary": "Valencia"
+        }
+    ]
+}
+
+   
+
 

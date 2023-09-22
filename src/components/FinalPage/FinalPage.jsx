@@ -1,7 +1,8 @@
 import './finalpage.css'
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Explorador from '../../assets/images/Explorer1_quiz.png'
+import Explorador from '../../assets/images/Explorer1_quiz.png';
+import questionsData from '../../../src/data/questions.json'
 
 
 function FinalPage() {
@@ -16,12 +17,16 @@ function FinalPage() {
     }
   }, [correctAnswersCount]);
 
+  const totalQuestions = questionsData.totalQuestions;
+
+  const correctPercentage = (correctAnswersCount / totalQuestions) * 100;
+
   let explorerType = null;
-  if (correctAnswersCount >=6) {
+  if (correctPercentage >=67) {
     explorerType = 'experto';
-  } else if (correctAnswersCount >= 4) {
+  } else if (correctPercentage >= 33) {
     explorerType = 'medio';
-  } else if (correctAnswersCount >= 2) {
+  } else if (correctAnswersCount > 0) {
     explorerType = 'novato';
   }
   

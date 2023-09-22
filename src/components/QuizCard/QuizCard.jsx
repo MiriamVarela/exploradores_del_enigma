@@ -6,7 +6,10 @@ import questionsData from '../../data/questions.json';
 
 
 function QuizCard({ questionId, quiztext }) {
-  const question = questionsData[questionId - 1]; 
+  
+  const { questions } = questionsData;
+  const question = questions[questionId - 1]; 
+  
   
   
   const [selectedOption, setSelectedOption] = useState('');
@@ -31,9 +34,9 @@ function QuizCard({ questionId, quiztext }) {
 function handleOptionSelect(e) {
     const selectedValue = e.target.value;
     setSelectedOption(selectedValue);
-    setIsCorrect(selectedValue === questionsData[questionId - 1].correct_answer);
+    setIsCorrect(selectedValue === question.correct_answer);
   
-    if (selectedValue === questionsData[questionId - 1].correct_answer) {
+    if (selectedValue === question.correct_answer) {
         setCorrectAnswersCount(prevCount => prevCount + 1);
         localStorage.setItem('correctAnswersCount', correctAnswersCount + 1);
     }
@@ -45,13 +48,15 @@ if (!question) {
 
 const { options } = question;
 
+const correctPercentage = (correctAnswersCount / questionsData.totalQuestions) * 100;
+
 let explorerType = null;
-if (correctAnswersCount >= 6) {
-  explorerType = 'experto';
- } else if (correctAnswersCount >=4) {
-  explorerType = 'medio';
- } else if (correctAnswersCount >= 2) {
+if (correctPercentage >= 33 && correctPercentage < 67) {
   explorerType = 'novato';
+ } else if (correctPercentage >= 67 && correctPercentage <100) {
+  explorerType = 'medio';
+ } else if (correctPercentage === 100) {
+  explorerType = 'experto';
  }
 
 
