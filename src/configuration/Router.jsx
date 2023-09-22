@@ -19,7 +19,7 @@ const RouterItem = () => {
                 <Route path="/itinerary1pk4" element={<Pk4/>}></Route>
                 <Route path="/itinerary1pk5" element={<Pk5/>}></Route>
                 <Route path="/itinerary1pk6" element={<Pk6/>}></Route>
-                <Route path="/itinerary1final" element={<FinalPage/>}></Route>
+                <Route path="/itinerary1final" element={<FinalPage />} />
             </Routes>
         </BrowserRouter>
     )

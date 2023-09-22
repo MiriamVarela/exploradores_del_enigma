@@ -1,18 +1,18 @@
 import './App.css'
 
+
 import RouterItem from './configuration/Router'
 
 
 function App() {
   
-
   return (
     <>
-      <RouterItem></RouterItem>
+      <RouterItem />
       
       
     </>
-  )
+  );
 }
 
 export default App
