@@ -45,6 +45,15 @@ if (!question) {
 
 const { options } = question;
 
+let explorerType = null;
+if (correctAnswersCount >= 6) {
+  explorerType = 'experto';
+ } else if (correctAnswersCount >=4) {
+  explorerType = 'medio';
+ } else if (correctAnswersCount >= 2) {
+  explorerType = 'novato';
+ }
+
 
 return (
     <div className="quizcardiv">
@@ -67,9 +76,7 @@ return (
       {isCorrect === true && <p>¡Respuesta correcta!</p>}
       {isCorrect === false && <p>Respuesta incorrecta. Inténtalo de nuevo.</p>}
       <p>Respuestas correctas acumuladas: {correctAnswersCount}</p>
-      {correctAnswersCount >= 2 && <p>¡Ya eres un explorador novato!</p>}
-      {correctAnswersCount >= 4 && <p>¡Ya eres un explorador medio!</p>}
-      {correctAnswersCount >= 6 && <p>¡Ya eres un explorador experto!</p>}
+      {explorerType && <p>¡Ya eres un explorador {explorerType}!</p>}
     </div>
   );
 }
